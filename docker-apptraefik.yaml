@@ -1,0 +1,40 @@
+version: '3.5'
+
+services:
+  app:
+    container_name: web-pharmacy
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - '3013:3013'
+    environment:
+      - API_PORT=3013
+      - API_VERSION=0.1.0-beta.03
+      - MONGO_URL=mongodb://app-db:27017/app
+      - MONGO_USER=admin
+      - MONGO_PWD=admin
+    labels:
+      - "traefik.enable=true"
+      - "traefik.frontend.rule=Host:www.farmaciamila.com.br"
+      - "traefik.frontend.protocol=https"
+      # - "traefik.enable=true"
+      # - "traefik.admin.frontend.rule=Host:www.farmaciamila.com.br"
+      # - "traefik.admin.port=3013"
+      # - "traefik.basic.frontend.rule=Host:www.farmaciamila.com.br"
+      # - "traefik.basic.port=3013"
+      # - "traefik.basic.protocol=http"
+
+  traefik:
+    container_name: traefik
+    image: traefik
+    # restart: always
+    command: --api --docker.exposedbydefault=false --logLevel="DEBUG" 
+    ports:
+      - 80:80
+      - 443:443
+      - 8080:8080
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ./traefik.toml:/traefik.toml
+      - ./acme.json:/acme.json
