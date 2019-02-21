@@ -4,8 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
   <link rel="stylesheet" href="css/mila.css">
   <link rel="icon" href="img/favicon.ico">
   <title>Farmácia Mila - 15 anos! Medicamentos manipulados para Içara, Criciúma e região.</title>
@@ -17,20 +16,19 @@
 <body id="page-top">
 
   <!-- info business -->
-  <section id="info">
-    <div id="top-info" class="d-none d-md-block container-fluid b-color-green">
+  <section id="infoBusiness">
+    <div class="fixed-top d-none d-md-block container-fluid b-color-green">
       <div class="d-none d-md-block container">
         <div class="row align-items-center py-1 font-color-white ">
           <div class="col d-inline-flex">
             <strong><i class="pr-1 fa fa-phone fa-lg"> </i>
               Informações: (48) 3045-0990</strong>
-            <strong> <a font-color-white href="https://api.whatsapp.com/send?1=pt_BR&amp;phone=5548998334506" style="
-          color: white;"> <i class="pl-4 pr-1 fa fa-whatsapp fa-lg"></i>
-                WhatsApp: (48) 9 9833-4506 </a></strong>
+            <strong> <a style="color: white;" href="https://wa.me/5548998334506?text=Pedido%20a%20partir%20do%20site%20" target="blank">
+               <i class="pl-4 pr-1 fa fa-whatsapp fa-lg"></i> WhatsApp: (48) 9 9833-4506 </a></strong>
           </div>
           <div class="col-offset d-inline-flex text-right">
-            <button class="btn btn-success" type="button" href="#conheca">
-              Enviar receita
+            <button class="btn btn-success" type="button" onclick="window.location.href='#sendInvite'">
+              <strong>Enviar receita</strong>
             </button>
           </div>
         </div>
@@ -39,38 +37,42 @@
   </section>
 
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-light">
-    <div class="container"> <a class="navbar-brand text-primary" href="#">
-        <b style="color: green;"> Farmácia Mila</b>
-      </a> <button class="navbar-toggler navbar-toggler-right border-0" type="button" data-toggle="collapse"
-        data-target="#navbar5">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbar5">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item"> <a class="nav-link" href="#conheca">Conheça a Mila</a> </li>
-          <li class="nav-item"> <a class="nav-link" href="#promocao">Promoçoes</a> </li>
-          <li class="nav-item"> <a class="nav-link" href="#localizacao">Localização e contato</a> </li>
-        </ul>
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item"> <a class="nav-link" href="#"><i class="fa fa-facebook fa-lg"> Facebook</i><br></a> </li>
-          <li class="nav-item"> <a class="nav-link" href="#"><i class="fa fa-instagram fa- fa-lg"> Instagram</i></a>
-          </li>
-          <!-- </ul> <a class="btn btn-outline-primary navbar-btn ml-md-2" href="#telegram">Contato</a> -->
+  <section id="navigation">
+  <div class="pt-4">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container"> <a class="navbar-brand text-primary" href="#page-top">
+          <b style="color: green;"> Farmácia Mila</b>
+        </a> <button class="navbar-toggler navbar-toggler-right border-0" type="button" data-toggle="collapse"
+          data-target="#navbar5">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar5">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item"> <a class="nav-link" href="#about">Conheça a Mila</a> </li>
+            <li class="nav-item"> <a class="nav-link" href="#promotion">Promoçoes</a> </li>
+            <li class="nav-item"> <a class="nav-link" href="#location">Localização e contato</a> </li>
+          </ul>
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"> <a class="nav-link" href="https://www.facebook.com/MilaFarmaciaDeManipulacao/" target="blank"><i class="fa fa-facebook fa-lg"> Facebook</i><br></a>
+            </li>
+            <li class="nav-item"> <a class="nav-link" href="https://www.instagram.com/milafarmaciademanipulacao/" target="blank"><i class="fa fa-instagram fa- fa-lg"> Instagram</i></a>
+            </li>
+            <!-- </ul> <a class="btn btn-outline-primary navbar-btn ml-md-2" href="#telegram">Contato</a> -->
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
+  </div>
+  </section>
 
   <!-- main page  -->
   <header>
-    <section id="heade-start">
       <!-- pagina inicial -->
       <div class="container" style="height:73vh;">
-        <!-- linha geral section-->
+        <!-- general line into section-->
         <div class="row h-100 align-items-center justify-content-center pb-4 pt-4">
-          <!-- coluna com carrousel -->
+          <!-- col carrousel -->
           <div class="col  h-100">
-            <div class="row align-items-center  h-100">
+            <div class="row align-items-center h-100">
               <div class="col  h-100">
                 <div id="carousel1" class="carousel slide h-100" data-ride="carousel">
                   <div class="carousel-inner  h-100">
@@ -78,7 +80,7 @@
                       <img class="d-block w-100  h-100" src="img/missao2.png" alt="Bem vindo">
                     </div>
                     <div class="carousel-item  h-100">
-                      <img class="d-block w-100  h-100" src="img/mila_logo2.png" alt="Conheça a farmácia">
+                      <img class="d-block w-100  h-100" src="img/mila_logo3.png" alt="Conheça a farmácia">
                     </div>
                   </div>
                 </div>
@@ -87,8 +89,8 @@
           </div>
           <!-- barra com manipule sua receita -->
           <div class="col h-100 pl-4">
-            <div class="row align-items-center justify-content-center h-100" style="background: #ecffea;">
-              <div class="mx-auto text-center shadow p-2 h-100">
+            <div class="row align-items-center justify-content-center h-100 shadow" style="background: #ecffea;">
+              <div class="text-center">
                 <div class="text-muted pt-3">
                   <h1>Manipule sua receita!</h1>
                 </div>
@@ -97,9 +99,9 @@
                   medicamentos de qualidade. Nos
                   envie sua receita agora mesmo por whatsapp, email ou pela seção de contato do site<br><br></p>
                 <div class="row text-muted">
-                  <div class="col-md-4 col-4 p-2"> <i class="d-block  fa fa-3x fa-whatsapp"></i> </div>
-                  <div class="col-md-4 col-4 p-2"> <i class="d-block  fa fa-3x fa-envelope"></i> </div>
-                  <div class="col-md-4 col-4 p-2"> <i class="d-block  fa fa-3x fa-laptop"></i> </div>
+                  <div class="col-md-4 col-4 p-2"> <a style="color: green;" title="Envie sua receita por WhatsApp" href="https://wa.me/5548998334506?text=Pedido%20a%20partir%20do%20site%20" target="blank"><i class="d-block fa fa-3x fa-whatsapp"></i></a></div>
+                  <div class="col-md-4 col-4 p-2"> <a style="color: green;" title="Envie sua receita por email: farmaciamilla@gmail.com" href="javascript:alert('E-mail: farmaciamilla@gmail.com');"><i class="d-block fa fa-3x fa-envelope"></i></a> </div>
+                  <div class="col-md-4 col-4 p-2"> <a style="color: green;" title="Envie sua receita por este site" href="#telegram"> <i class="d-block fa fa-3x fa-laptop"></i></a> </div>
                 </div>
               </div>
             </div>
@@ -107,12 +109,11 @@
           </div>
         </div>
       </div>
-    </section>
   </header>
 
   <!-- About Section -->
-  <section id="conheca">
-    <div style="min-height 100vh;" class="b-color-green">
+  <section id="about">
+    <div style="min-height:100vh;" class="b-color-green">
       <div class="container-fluid py-5">
         <div class="row">
           <div class="col">
@@ -125,8 +126,10 @@
           <div class="mx-auto p-3 col-md-4"> <img class="d-block img-fluid p-5" src="img/mila_logo2.png"> </div>
           <div class="p-1 col-md-8 text-justify d-flex align-items-center">
             <div class="blockquote mb-0">
-              <p><strong>"I throw myself down among the tall grass by the trickling stream; and, as I lie close to the earth, a
-                thousand unknown plants are noticed by me: when I hear the buzz of the little world among the stalks."</strong>
+              <p><strong>"I throw myself down among the tall grass by the trickling stream; and, as I lie close to the
+                  earth, a
+                  thousand unknown plants are noticed by me: when I hear the buzz of the little world among the
+                  stalks."</strong>
               </p>
               <div class="blockquote-footer"><strong>Milena Casagrande Fernandes - Farmaceútica Responsável</strong></div>
             </div>
@@ -136,11 +139,10 @@
       <div class="container">
         <div class="row">
           <div class="col-md-4 text-right">
-            <button
-               class="btn btn-success" type="button">
-               <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Em construção
-             </button>
-          </div>  
+            <button class="btn btn-success" type="button">
+              <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Em construção
+            </button>
+          </div>
           <div class="col-md-8 text-right">
             <h1 class="display-4
            d-flex justify-content-end"><strong>e qualidade</strong></h1>
@@ -151,8 +153,8 @@
   </section>
 
   <!-- Promoções Section -->
-  <section id="promocao">
-    <div class="py-5" style="min-height 100vh;background-color: #d7f9de;">
+  <section id="promotion">
+    <div class="py-5" style="min-height:100vh;">
       <div class="container">
         <div class="row text-center">
           <div class="col-lg-7 p-md-5 p-4 d-flex flex-column justify-content-center">
@@ -168,18 +170,17 @@
             <div class="row text-center d-flex justify-content-center py-4">
               <div class="col-3 col-md-6 py-2 " style="background-color: rgb(59, 89, 152);">
                 <div class="row align-items-center">
-                  <a href="#">
+                  <a href="https://www.facebook.com/MilaFarmaciaDeManipulacao/" target="blank">
                     <div class="col"><i class="fa fa-fw fa-facebook fa-3x text-white"></i></div>
                   </a>
-                  <div class="col fb-like" data-href="https://www.facebook.com/MilaFarmaciaDeManipulacao/"
-                    data-layout="box_count" data-action="like" data-size="large" data-show-faces="true"
-                    data-share="true"></div>
+                  <div class="col fb-like" data-href="https://www.facebook.com/MilaFarmaciaDeManipulacao/" data-layout="box_count"
+                    data-action="like" data-size="large" data-show-faces="true" data-share="true"></div>
                 </div>
               </div>
               <div class="col-3 col-md-6 py-2" style="background-color: rgb(144, 123, 228);">
                 <div class="row h-100 align-items-center">
                   <div class="col">
-                    <a href="#">
+                    <a href="https://www.instagram.com/milafarmaciademanipulacao/" target="blank">
                       <i class="fa fa-fw fa-instagram fa-3x text-white"></i>
                     </a>
                   </div>
@@ -215,7 +216,7 @@
   </section>
 
   <!-- manipulate your recipe -->
-  <section id="manipule">
+  <section id="sendInvite">
     <div class="container-fluid b-color-green" style="height:100vh;">
       <div class="row align-items-center h-100 text-center">
         <div class="col">
@@ -226,21 +227,21 @@
           </div>
           <div class="row">
             <div class="col p-4">
-              <h3><strong><em>A farmácia de manipulação Mila está há 15 anos oferencendo medicamentos de qualidade. 
-                <br>Faça um orçamento agora mesmo! 
-                <br>Nos envie sua receita por whatsapp, email ou pela seção de contato do site.
+              <h3><strong><em>A farmácia de manipulação Mila está há 15 anos oferencendo medicamentos de qualidade.
+                    <br>Faça um orçamento agora mesmo!
+                    <br>Nos envie sua receita por whatsapp, email ou pela seção de contato do site.
                 </strong></em></h3>
             </div>
           </div>
           <div class="row">
             <div class="col">
-              <i class="d-block font-color-white fa fa-3x fa-whatsapp"></i>
+              <a style="color: white;" title="Envie sua receita por WhatsApp" href="https://wa.me/5548998334506?text=Pedido%20a%20partir%20do%20site%20" target="blank"> <i class="d-block font-color-white fa fa-3x fa-whatsapp"></i></a>
             </div>
             <div class="col">
-              <i class="d-block font-color-white fa fa-3x fa-envelope"></i>
+                <a style="color: white;" title="Envie sua receita por email: farmaciamilla@gmail.com" href="javascript:alert('E-mail: farmaciamilla@gmail.com');"><i class="d-block font-color-white fa fa-3x fa-envelope"></i></a>
             </div>
             <div class="col">
-              <i class="d-block font-color-white fa fa-3x fa-laptop"></i>
+                <a style="color: white;" title="Envie sua receita por este site" href="#telegram"><i class="d-block font-color-white fa fa-3x fa-laptop"></i></a>
             </div>
           </div>
         </div>
@@ -248,12 +249,12 @@
     </div>
   </section>
 
-  <!-- Contact Section -->
-  <section id="localizacao"">
-      <div class=" container" style="min-height:100vh;">
+  <!-- Location Section -->
+  <section id="location"">
+      <div class="container" style="min-height:100vh;">
     <div class="row p-5">
       <div class="col text-center">
-        <h1 ><strong class="text-primary"><em>Contato e localização</em></strong></h1>
+        <h1><strong class="text-primary"><em>Localização e contato</em></strong></h1>
       </div>
     </div>
     <div class="row">
@@ -265,7 +266,7 @@
             <h4 class="text-uppercase m-0">Endereço</h4>
             <hr class="my-4">
             <div class="small text-primary">Rua Anita Garibaldi, 207, sala 4, Ed. Center Giassi, Içara, SC</div>
-            <div class="small "><a class="text-black-50" href="">Click aqui para abrir o mapa</a></div>
+            <div class="small "><a class="text-black-50" href="https://goo.gl/maps/hvmfPTVXJXE2" target="blank">Click aqui para abrir o mapa</a></div>
           </div>
         </div>
       </div>
@@ -279,7 +280,7 @@
             <div class="small text-primary">
               farmaciamilla@gmail.com
             </div>
-            <div class="small "><a class="text-black-50" href="">Click aqui para enviar pelo site</a></div>
+            <div class="small "><a class="text-black-50" href="#telegram">Click aqui para enviar pelo site</a></div>
           </div>
         </div>
       </div>
@@ -292,7 +293,7 @@
             <hr class="my-4">
             <div class="small text-primary"><i class="fa fa-phone"></i> (48) 3045 0990</div>
             <div class="small text-primary"><i class="fa fa-whatsapp"></i> (48) 9 9833 4506</div>
-            <div class="small "><a class="text-black-50" href="">click para enviar um whatsapp</a></div>
+            <div class="small "><a class="text-black-50" href="https://wa.me/5548998334506?text=Pedido%20a%20partir%20do%20site%20" target="blank">click para enviar um whatsapp</a></div>
           </div>
         </div>
       </div>
@@ -301,37 +302,37 @@
   </section>
 
   <!-- Telegram section -->
-  <section class="content-section vertical-center" id="telegram">
-    <div class="container-fluid text-center my-auto" style="min-height:100vh;background-color:#d7f9de">
+  <section id="telegram">
+    <div class="container-fluid text-center my-auto" style="min-height:100vh;background-color: green">
       <div class="row p-5">
         <div class="col-lg-24 mx-auto">
-            <h1 ><strong class="text-primary"><em>Orçamentos, dúvidas e dicas da Mila</em></strong></h1>
-            <h4 ><strong class="text-primary"><em>Contamos com sua mensagem!</em></strong></h4>
+          <h1><strong><em>Orçamentos, dúvidas e dicas da Mila</em></strong></h1>
+          <h4><strong><em>Contamos com sua mensagem!</em></strong></h4>
           <p><br><br> </p>
           <div id="form-contatct" class="text-left col-lg-24">
             <form id="pesquisa" action="/contact" method="post">
               <!-- name form -->
               <div class="form-group">
-                <label for="nameForm">Nome</label>
+                <label class="text-white" for="nameForm">Nome</label>
                 <input type="text" class="form-control" id="nameForm" name="nameForm" placeholder="Nome completo"
                   required>
               </div>
               <!-- email form -->
               <div class="form-group">
-                <label for="emailForm">Endereço de email (opcional)</label>
+                <label class="text-white" for="emailForm">Endereço de email (opcional)</label>
                 <input type="email" class="form-control" id="emailForm" name="emailForm" placeholder="nome@email.com">
               </div>
               <!-- phone form -->
               <div class="form-group">
-                <label for="phoneForm">Telefone</label>
+                <label class="text-white" for="phoneForm">Telefone</label>
                 <input type="phone" class="form-control" id="phoneForm" name="phoneForm" placeholder="(48)9 9833 4506"
                   required>
               </div>
               <!-- message text -->
               <div class="form-group">
-                <label for="messageTx">Messagem</label>
-                <textarea class="form-control" id="messageTx" name="messageTx" rows="3"
-                  placeholder="Orçamentos, dúvidas, críticas, sugestões..." required></textarea>
+                <label class="text-white" for="messageTx">Messagem</label>
+                <textarea class="form-control" id="messageTx" name="messageTx" rows="3" placeholder="Orçamentos, dúvidas, críticas, sugestões..."
+                  required></textarea>
               </div>
               <div class="form-group">
                 <button type="submit" class="btn btn-success">Enviar</button>
@@ -359,30 +360,30 @@
   </section>
 
   <!-- Footer -->
-  <footer class="bg-black small text-center text-white-50">
-    <div class="container">
-      Copyright &copy; Farmácia Mila
+  <footer>
+    <div class="container-fluid text-center">
+      <strong style="color:green">Farmácia Mila! 15 anos com você!</strong>
     </div>
   </footer>
 
   <!-- Bootstrap core JavaScript -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
-    integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
     crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
-    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"
-    style=""></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+    crossorigin="anonymous" style=""></script>
   <div id="fb-root"></div>
-  <script>(function (d, s, id) {
+  <script>
+    (function (d, s, id) {
       var js, fjs = d.getElementsByTagName(s)[0];
       if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
+      js = d.createElement(s);
+      js.id = id;
       js.src = 'https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v3.2';
       fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
 
 </body>
 
