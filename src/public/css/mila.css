@@ -133,7 +133,7 @@ strong {
 }
 
 small {
-  font-size: 80%; }
+  font-size: 100%; }
 
 sub,
 sup {
@@ -4608,7 +4608,7 @@ a.close.disabled {
   vertical-align: text-top !important; }
 
 .bg-primary {
-  background-color: #12bbad !important; }
+  background-color: #ebf9e9 !important; }
 
 a.bg-primary:hover, a.bg-primary:focus,
 button.bg-primary:hover,
@@ -6862,7 +6862,8 @@ button.bg-dark:focus {
   .text-sm-right {
     text-align: right !important; }
   .text-sm-center {
-    text-align: center !important; } }
+    text-align: center !important; } 
+}
 
 @media (min-width: 768px) {
   .text-md-left {
