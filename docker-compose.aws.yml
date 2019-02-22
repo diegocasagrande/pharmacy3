@@ -1,0 +1,22 @@
+version: '3.5'
+
+services:
+
+###############################################################################
+# API - Node Application
+###############################################################################
+  mila:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: 
+      diegocasagrande/mila:latest
+    container_name: mila
+    ports:
+      - '3013:3013'
+    volumes:
+      - ./src/:/var/app/src/
+    environment:
+      - API_PORT=3013
+      - API_VERSION=0.1.0-beta
+
