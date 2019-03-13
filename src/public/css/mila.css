@@ -12,7 +12,7 @@
   --red: #dc3545;
   --orange: #fd7e14;
   --yellow: #ffc107;
-  --green: #28a745;
+  --green: #9affb2;
   --teal: #20c997;
   --cyan: #17a2b8;
   --white: #fff;
@@ -62,17 +62,63 @@ body {
 .b-color-green{
   background-color: green;
 }
+.b-color-white{
+  background-color: white;
+}
 .font-color-white {
   color: #ffffff;
 }
 
-
-
-
-
-;
+.pill {
+  color: green;
+  padding: 8px;
+  background: #fff;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  font-size: 16px;
+  border-radius: 15px;
+  line-height: 14px;
+  display: inline-block;
+  margin-right: 12px;
+  font-weight: bold; 
 }
 
+.font-15 {
+  font-size: 1.5rem;
+  vertical-align: middle;
+  text-shadow: 0 0 17px #f3f3f3;
+  color: #f3f3f3;  
+  font-weight: bold; 
+}
+
+/* Back to top button */
+
+.back-to-top {
+  position: fixed;
+  display: none;
+  background: #3d82224f;
+  color: #fff;
+  width: 44px;
+  height: 44px;
+  text-align: center;
+  line-height: 1;
+  font-size: 16px;
+  border-radius: 50%;
+  right: 15px;
+  bottom: 15px;
+  transition: background 0.5s;
+  z-index: 11;
+}
+
+.back-to-top i {
+  padding-top: 12px;
+  color: #fff;
+}
+
+.back-to-top {
+  bottom: 15px;
+}
 
 [tabindex="-1"]:focus {
   outline: 0 !important; }
@@ -755,7 +801,8 @@ pre {
   .offset-sm-10 {
     margin-left: 83.33333%; }
   .offset-sm-11 {
-    margin-left: 91.66667%; } }
+    margin-left: 91.66667%; } 
+  }
 
 @media (min-width: 768px) {
   .col-md {
@@ -3029,7 +3076,8 @@ input[type="button"].btn-block {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  padding: 0.75rem 1.5rem; }
+  /* padding: 0.75rem 1.5rem; */
+ }
   .navbar > .container,
   .navbar > .container-fluid {
     display: flex;
@@ -3147,8 +3195,9 @@ input[type="button"].btn-block {
 @media (max-width: 991.98px) {
   .navbar-expand-lg > .container,
   .navbar-expand-lg > .container-fluid {
-    padding-right: 0;
-    padding-left: 0; } }
+    /* padding-right: 0;  */
+     /* padding-left: 0;  */
+  } }
 
 @media (min-width: 992px) {
   .navbar-expand-lg {
@@ -5436,6 +5485,9 @@ button.bg-dark:focus {
 .w-100 {
   width: 100% !important; }
 
+.w-101 {
+  width: 101% !important; }
+
 .w-auto {
   width: auto !important; }
 
@@ -5683,10 +5735,15 @@ button.bg-dark:focus {
 
 .p-5 {
   padding: 4.5rem !important; }
+.p-6 {
+  padding: 6rem !important; }
 
 .pt-5,
 .py-5 {
   padding-top: 4.5rem !important; }
+.pt-10,
+.py-10 {
+  padding-top: 10rem !important; }
 
 .pr-5,
 .px-5 {
@@ -5695,6 +5752,9 @@ button.bg-dark:focus {
 .pb-5,
 .py-5 {
   padding-bottom: 4.5rem !important; }
+.pb-10,
+.py-10 {
+  padding-bottom: 10rem !important; }
 
 .pl-5,
 .px-5 {

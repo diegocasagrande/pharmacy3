@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
   <link rel="stylesheet" href="css/mila.css">
+  <link href="css/animate.css" rel="stylesheet">  
   <link rel="icon" href="img/favicon.ico">
   <title>Farmácia Mila - 15 anos! Medicamentos manipulados para Içara, Criciúma e região.</title>
   <meta name="Diego Casagrande" content="">
@@ -16,264 +17,322 @@
 <body id="page-top">
 
   <!-- info business -->
-  <section id="infoBusiness">
-    <div class="fixed-top d-none d-md-block container-fluid b-color-green">
-      <div class="d-none d-md-block container">
-        <div class="row align-items-center py-1 font-color-white ">
-          <div class="col d-inline-flex">
-            <strong><i class="pr-1 fa fa-phone fa-lg"> </i>
-              Informações: (48) 3045-0990</strong>
-            <strong> <a style="color: white;" href="https://wa.me/5548998334506?text=Pedido%20a%20partir%20do%20site%20"
-                target="blank">
-                <i class="pl-4 pr-1 fa fa-whatsapp fa-lg"></i> WhatsApp: (48) 9 9833-4506 </a></strong>
-          </div>
-          <div class="col-offset d-inline-flex text-right">
-            <button class="btn btn-success" type="button" onclick="window.location.href='#sendInvite'">
-              <strong>Enviar receita</strong>
-            </button>
+  <section id="navigation">
+    <div class="fixed-top">
+      <div class="d-none d-md-block container-fluid b-color-green ">
+        <div class="d-none d-md-block container">
+          <div class="row align-items-center py-1 font-color-white w-101">
+            <div class="col d-inline-flex">
+              <!-- TODO: trocar imagem para brando -->
+              <a class="scrollto" href="#page-top"> <span><img src="img/mila_brand_white.png" alt="Farmácia de Manipulação Mila" style="max-height: 1.6rem;" class="pl-1 pr-2"> </span></a>
+              <strong><i class="pr-1 fa fa-phone fa-lg"> </i>
+                Informações: (48) 3045-0990</strong>
+              <strong> <a class="scrollto font-color-white" href="https://wa.me/5548998334506?text=Pedido%20a%20partir%20do%20site%20"
+                  target="blank">
+                  <i class="pl-4 pr-1 fa fa-whatsapp fa-lg"></i> WhatsApp: (48) 9 9833-4506 </a></strong>
+            </div>
+            <div class="col-offset d-inline-flex text-right">
+              <button class="btn btn-success" type="button" onclick="window.location.href='#sendInvite'">
+                <strong>Enviar receita</strong>
+              </button>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+      <div class>
 
-  <!-- Navigation -->
-  <section id="navigation">
-    <div class="pt-4">
-      <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container"> <a class="navbar-brand text-primary" href="#page-top">
-            <b style="color: green;"> Farmácia Mila</b>
-          </a> <button class="navbar-toggler navbar-toggler-right border-0" type="button" data-toggle="collapse"
-            data-target="#navbar5">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbar5">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item"> <a class="nav-link" href="#about">Conheça a Mila</a> </li>
-              <li class="nav-item"> <a class="nav-link" href="#promotion">Promoçoes</a> </li>
-              <li class="nav-item"> <a class="nav-link" href="#location">Localização e contato</a> </li>
-            </ul>
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item"> <a class="nav-link" href="https://www.facebook.com/MilaFarmaciaDeManipulacao/"
-                  target="blank"><i class="fa fa-facebook fa-lg"> Facebook</i><br></a>
-              </li>
-              <li class="nav-item"> <a class="nav-link" href="https://www.instagram.com/milafarmaciademanipulacao/"
-                  target="blank"><i class="fa fa-instagram fa- fa-lg"> Instagram</i></a>
-              </li>
-              <!-- </ul> <a class="btn btn-outline-primary navbar-btn ml-md-2" href="#telegram">Contato</a> -->
+      </div>
+      <!-- Navigation -->
+      <div class="b-color-white">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <!-- <div class="container"> -->
+              <!-- <div class="navbar-toggler border-0 row text-center w-100">
+                <div class="col">
+                  <span><img src="img/mila_brand.png" alt="Farmácia de Manipulação Mila" style="max-height: 1.6rem;"></span>
+                </div>
+              </div> -->
+            <!-- </div> -->
+          <div class="container"> 
+            <!-- <a class="navbar-brand text-primary" href="#page-top">
+              <b style="color: green;"> Farmácia Mila</b> 
+            </a> -->
+            <span class="navbar-toggler border-0 p-2"><img src="img/mila_brand.png" alt="Farmácia de Manipulação Mila" style="max-height: 2rem;"></span>
+            <button class="navbar-toggler navbar-toggler-right border-0" type="button" data-toggle="collapse"
+              data-target="#navbar5">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar5">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item"> <a class="nav-link scrollto" href="#page-top">Início</a> </li>
+                <li class="nav-item"> <a class="nav-link scrollto" href="#about">Conheça a Mila</a> </li>
+                <li class="nav-item"> <a class="nav-link scrollto" href="#promotion">Promoções</a> </li>
+                <li class="nav-item"> <a class="nav-link scrollto" href="#sendInvite">Orçamentos</a> </li>
+                <li class="nav-item"> <a class="nav-link scrollto" href="#location">Localização</a> </li>
+                <li class="nav-item"> <a class="nav-link scrollto" href="#telegram">Contato</a> </li>
+              </ul>
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item"> <a class="nav-link" href="https://www.facebook.com/MilaFarmaciaDeManipulacao/"
+                    target="blank"><i class="fa fa-facebook fa-lg"> Facebook</i><br></a>
+                </li>
+                <li class="nav-item"> <a class="nav-link" href="https://www.instagram.com/milafarmaciademanipulacao/"
+                    target="blank"><i class="fa fa-instagram fa- fa-lg"> Instagram</i></a>
+                </li>
+                <!-- </ul> <a class="btn btn-outline-primary navbar-btn ml-md-2" href="#telegram">Contato</a> -->
+            </div>
           </div>
-        </div>
-      </nav>
+        </nav>
+      </div>
     </div>
   </section>
 
   <!-- main page  -->
   <header>
     <!-- pagina inicial -->
-    <div class="container" style="height:73vh;">
-      <!-- general line into section-->
-      <div class="row h-100 align-items-center justify-content-center pb-4 pt-4">
-        <!-- col carrousel -->
-        <div class="col-md  h-100">
-          <div class="row align-items-center h-100">
-            <div class="col  h-100">
-              <div id="carousel1" class="carousel slide h-100" data-ride="carousel">
-                <div class="carousel-inner  h-100">
-                  <div class="carousel-item active  h-100">
-                    <img class="d-block w-100  h-100" src="img/missao2.png" alt="Bem vindo">
-                  </div>
-                  <div class="carousel-item  h-100">
-                    <img class="d-block w-100  h-100" src="img/mila_logo3.png" alt="Conheça a farmácia">
+    <div class="container row " style="height: 20vh;"> </div>
+    <!-- general line into section-->
+    <div class="container" style="height:66vh">
+      <div class="row align-items-center h-100">
+        <div class="row h-100 align-items-center">
+
+          <!-- col carrousel -->
+          <div class="col-md-5  h-100 pl-2">
+            <div class="row align-items-center h-100">
+              <div class="col  h-100">
+                <div id="carousel1" class="carousel slide h-100" data-ride="carousel">
+                  <div class="carousel-inner h-100">
+                    <div class="carousel-item active  h-100">
+                      <img class="d-block w-100  h-100" src="img/missao2.png" alt="Bem vindo">
+                    </div>
+                    <div class="carousel-item  h-100">
+                      <img class="d-block w-100  h-100" src="img/mila_logo3.png" alt="Conheça a farmácia">
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <!-- barra com manipule sua receita -->
-        <div class="col-md h-100 pl-4 d-none d-md-block">
-          <div class="row align-items-center justify-content-center h-100 shadow" style="background: #ecffea;">
-            <div class="text-center">
-              <div class="text-muted pt-3">
-                <h2>Manipule sua receita!</h2>
-              </div>
-              <p class="mb-2 mt-2 font-italic font-weight-bold" style="color: green;">A Farmácia de Manipulação Mila
-                está há 15 anos oferencendo
-                medicamentos de qualidade. Nos
-                envie sua receita agora mesmo por whatsapp, email ou pela seção de contato do site<br><br></p>
-              <div class="row text-muted">
-                <div class="col-md-4 col-4 p-2"> <a style="color: green;" title="Envie sua receita por WhatsApp" href="https://wa.me/5548998334506?text=Pedido%20a%20partir%20do%20site%20"
-                    target="blank"><i class="d-block fa fa-3x fa-whatsapp"></i></a></div>
-                <div class="col-md-4 col-4 p-2"> <a style="color: green;" title="Envie sua receita por email: farmaciamilla@gmail.com"
-                    href="javascript:alert('E-mail: farmaciamilla@gmail.com');"><i class="d-block fa fa-3x fa-envelope"></i></a>
+
+          <!-- barra com manipule sua receita -->
+          <div class="col-md-7 h-100 pl-2 d-none d-md-block">
+            <div class="row align-items-center justify-content-center h-100 shadow" style="background: #ecffea;">
+              <div class="text-center">
+                <div class="text-muted pt-3">
+                  <h2>Manipule sua receita!</h2>
                 </div>
-                <div class="col-md-4 col-4 p-2"> <a style="color: green;" title="Envie sua receita por este site" href="#telegram">
-                    <i class="d-block fa fa-3x fa-laptop"></i></a> </div>
+                <p class="mb-2 mt-2 font-italic font-weight-bold" style="color: green;">A Farmácia de Manipulação Mila
+                  está há 15 anos oferencendo medicamentos de qualidade.
+                  Nos envie sua receita agora mesmo por whatsapp ou pela seção de contato do site<br><br></p>
+                <div class="row text-muted">
+                  <div class="col"></div>
+                  <div class="col p-2"> <a class="scrollto" style="color: green; text-decoration: none;" title="Envie sua receita por WhatsApp"
+                      href="https://wa.me/5548998334506?text=Pedido%20a%20partir%20do%20site%20" target="blank"><i
+                        class="d-block fa fa-3x fa-whatsapp"></i>WhatsApp</a>
+                  </div>
+                  <div class="col p-2"> <a class="scrollto" style="color: green; text-decoration: none;" title="Envie sua receita por email: farmaciamilla@gmail.com"
+                      href="javascript:alert('Envie sua receita para o e-mail: farmaciamilla@gmail.com');"><i class="d-block fa fa-3x fa-envelope"></i>E-mail</a>
+                  </div>
+                  <div class="col p-2"> <a class="scrollto" style="color: green; text-decoration: none;" title="Envie sua receita por este site"
+                      href="#telegram"><i class="d-block fa fa-3x fa-laptop"></i>Site</a>
+                  </div>
+                  <div class="col"></div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <div class="container row " style="height: 14vh;"> </div>
   </header>
 
   <!-- About Section -->
-  <section id="about" class="b-color-green">
-    <div class="container py-5" style="min-height:200vh;">
-      <div class="row">
-        <div class="col text-center">
-          <h2><em><strong>Conheça a Mila</strong></em></h2>
-        </div>
-      </div>
-      <div class="row">
-        <div class="mx-auto p-3 col-md-4"> <img class="rounded-circle d-block img-fluid p-5" src="img/mila_logo3.png">
-        </div>
-        <div class="p-1 col-md-8 text-justify d-flex align-items-center">
-          <div class="blockquote mb-0">
-            <p class="text-justify"><strong>"I throw myself down among the tall grass by the trickling stream; and, as I
-                lie close to the
-                earth, a
-                thousand unknown plants are noticed by me: when I hear the buzz of the little world among the
-                stalks."</strong>
-            </p>
-            <div class="small"><strong>Milena Casagrande Fernandes - Farmaceútica Responsável</strong></div>
+  <section id="about"">
+    <div class="container-flex row b-color-green" style="height: 15vh;">
+    </div>
+    <div class="container-flex row b-color-green">
+      <div class="container- py-3" style="min-height:85vh;">
+        <div class="row text-center">
+          <div class="col">
+            <h2> <strong><em>Conheça a Mila</em> </strong></h2>
           </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col text-center">
-          <h2><em><strong>Nossa missão</strong></em></h2>
+        <div class="row text-center p-4">
+          <!-- rigth text -->
+          <div class="col-md-1 pl-4 d-none d-md-block"></div>
+          <div class="col-md-7 wow slideInLeft font-color-white align-self-center " data-wow-duration="1s">
+            <p> <strong> A Farmácia de Manipulação Mila iniciou suas atividades há 15 anos com a missão de prover produtos
+                manipulados com o alto padrão de qualidade, garantindo dessa forma, a absoluta precisão das fórmulas e dos
+                cosméticos terapêuticos.</strong></p>
+  
+            <p><strong>Os profissionais atuantes na farmácia Mila mantém-se sempre atualizados, por meio de treinamentos e
+                acompanhamento de pesquisas sobre matérias primas e medicamentos. Contam também com a assessoria
+                especializada e suporte técnico de nível internacional.</strong></p>
+  
+            <p><strong>O processo de elaboração de um medicamento manipulado exige um rígido controle, as receitas
+                manipuladas são regulamentadas no Formulário Nacional da Farmacopeia Brasileira e mantidas pela ANVISA
+                (Agência Nacional de Vigilância Sanitária).</strong></p>
+          </div>
+          <!-- imag 01 -->
+          <div class="col-md-3 wow slideInRight" data-wow-duration="1s">
+            <img class="img w-100 h-100" src="img/imag2.png">
+          </div>
+          <div class="col-md-1 pr-2 d-none d-md-block"></div>
         </div>
-      </div>
-      <div class="row">
-        <div class="p-1 col-md-8 text-justify d-flex align-items-center">
-          <div class="blockquote mb-0">
-            <p class="text-justify"><strong>"I throw myself down among the tall grass by the trickling stream; and, as I
-                lie close to the
-                earth, a
-                thousand unknown plants are noticed by me: when I hear the buzz of the little world among the
-                stalks."</strong>
-            </p>
-            <div class="small"><strong>Milena Casagrande Fernandes - Farmaceútica Responsável</strong></div>
+        <div class="row text-center pt-5">
+          <div class="col">
+            <h2> <strong><em>Sobre medicamento manipulados</em> </strong></h2>
           </div>
         </div>
-        <div class="mx-auto p-3 col-md-4">
-          <img class="rounded-circle d-block img-fluid p-5" src="img/mila_logo3.png">
-        </div>
-      </div>
-      <div class="row">
-        <div class="p-5 bg-white ml-auto col-md-6 border">
-          <h2 class=" text-center"><strong style="color:green"><em>Medicamentos manipulados</em></strong></h2>
-          <p class="text-justify" style="color:green">Would I could describe these conceptions, could impress upon paper
-            all that is living so full
-            and warm within me, that it might be the mirror of my soul, as my soul is the mirror of the infinite.</p>
-        </div>
-        <div class="p-5 bg-white ml-auto col-md-6 border">
-          <h2 class=" text-center"><strong style="color:green"><em>E veja mais...</em></strong></h2>
-          <div class="embed-responsive embed-responsive-16by9">
-            <iframe src="https://www.youtube.com/embed/ctvlUvN6wSE?controls=0" allowfullscreen=""
-              class="embed-responsive-item"></iframe>
+        <div class="row text-justify p-4">
+          <!-- rigth text -->
+          <div class="col-md-2"></div>
+          <div class="col-md-8 wow slideInLeft font-color-white align-self-center" data-wow-duration="1s">
+            <div class="pill">1</div><span class="font-15">Economia</span>
+            <p class="py-3"> <strong> Os medicamentos manipulados são disponibilizados em sua quantidade exata ao consumo, evitando
+                deste modo desperdícios e reduzindo o custo. As fórmulas são dimensionadas para o paciente considerando fatores como
+                idade, sexo, peso e condições de saúde, permitindo o consumo de medicamentos na dose adequada.</strong></p>
+                <div class="pill">2</div><span class="font-15">Praticidade</span>
+            <p class="py-3"><strong>Permitem a formulação de mais de um medicamento em uma cápsula ou outra forma farmacêutica, que
+                possa reduzir a quantidade de medicamentos a ser ingerido.</strong></p>
+                <div class="pill">3</div><span class="font-15">Particularidades</span>
+            <p class="py-3"><strong>A manipulação pode beneficiar pacientes com alergias a componentes presentes em
+                medicamentos industrializados, como corantes e fragrâncias. Também proporciona mais facilidade para a ingestão com
+                diversas formas de apresentação (comprimidos, pós para diluição, gotas, xaropes, cápsulas de diferentes tamanhos,
+                cremes, géis, xampus, etc).</strong></p>
+                <div class="pill">4</div><span class="font-15">Segurança</span>
+            <p class="py-3"><strong>Os medicamentos manipulados só podem ser feitos em farmácias de manipulação capacitadas e
+                autorizadas a preparar as formulações personalizadas. Somos, periodicamente, fiscalizados pela Vigilância Sanitária
+                e pelos Conselhos Regionais de Farmácia.</strong></p>
           </div>
+          <div class="col-md-2"></div>
         </div>
+      <div class="row py-4">
+          <div class="container ">
+              <div class="row">
+                <div class="p-5 bg-white ml-auto col-md-6 border">
+                    <h2 class=" text-center"><strong style="color:green"><em>E veja mais...</em></strong></h2>
+                  <p class="text-justify" style="color:green">Would I could describe these conceptions, could impress upon
+                    paper
+                    all that is living so full
+                    and warm within me, that it might be the mirror of my soul, as my soul is the mirror of the infinite.</p>
+                </div>
+                <div class="p-5 bg-white ml-auto col-md-6 border">
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <iframe src="https://www.youtube.com/embed/ctvlUvN6wSE?controls=0" allowfullscreen="" class="embed-responsive-item"></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>        
+      </div>        
       </div>
     </div>
   </section>
 
+
   <!-- Promoções Section -->
-  <section id="promotion" class="b-color-green">
-    <div class="py-3" id="venue">
-      <div class="container">
-        <div class="row my-5 bg-primary animate-in-down">
-          <div class=" text-center col-md-6 align-self-center">
-  
-            <h2> <strong style="color:green">Promoções</strong></h2>
-            <br>
-            <h5><strong style="color:green"><em>
-                  Nossas promoções são publicadas em nossas redes sociais.
-                  <br>Aproveite! Estamos esperando vocês lá!
-                  <br>Curta nossa página no Facebook e siga no Instagram!
-                </em> </strong>
-            </h5>
-            <!-- parte facebook e instagram -->
-            <div class="row text-center d-flex justify-content-center py-4">
-              <!-- facebook -->
-              <div class="col-md-6 py-4 " style="background-color: rgb(59, 89, 152);min-height: 150px;">
-                <div class="row align-items-center">
-  
-                  <div class="col-5 text-right"><a href="https://www.facebook.com/MilaFarmaciaDeManipulacao/"
-                      target="blank"><i class="fa fa-fw fa-facebook fa-3x text-white"></i></a>
-                  </div>
-                  <div class="col-7 fb-like text-left" data-href="https://www.facebook.com/MilaFarmaciaDeManipulacao/"
-                    data-layout="box_count" data-action="like" data-size="large" data-show-faces="true" data-share="true">
-                  </div>
-                </div>
-              </div>
-              <!-- instagram -->
-              <div class="col-md-6 py-4" style="background-color: rgb(144, 123, 228);min-height: 150px;">
+  <section id="promotion" >
+    <div class="container row" style="height: 15vh;"> </div>
+    <div class="container" style="min-height:85vh">
+      <div class="row align-items-center h-100 ">
+        <!-- <div class="col">
+            <div class="row shadow"> -->
+        <div class="text-center col-md-6 align-self-center p-2 pl-4 py-4">
+          <h2> <strong style="color:green"><em>Promoções</em> </strong></h2>
+          <br>
+          <h5><strong style="color:green"><em>
+                Nossas promoções são publicadas em nossas redes sociais.
+                <br>Aproveite!
+                <br> Estamos esperando vocês lá!
+                <br>Curta no Facebook e siga no Instagram!
+              </em> </strong>
+          </h5>
+          <!-- parte facebook e instagram -->
+          <div class="row text-center d-flex justify-content-center py-5 ">
+            <!-- facebook -->
+            <div class="col-md-6  " style="background-color: rgb(59, 89, 152);min-height: 110px;">
+              <a href="https://www.facebook.com/MilaFarmaciaDeManipulacao/" target="blank">
                 <div class="row h-100 align-items-center">
                   <div class="col">
-                    <a href="https://www.instagram.com/milafarmaciademanipulacao/" target="blank">
-                      <i class="fa fa-fw fa-instagram fa-3x text-white"></i>
-                    </a>
+                    <i class="fa fa-fw fa-facebook fa-3x text-white"></i>
                   </div>
                 </div>
-              </div>
+              </a>
             </div>
-  
-          </div>
-          <div class="p-0 col-md-6">
-            <div class="carousel slide" data-ride="carousel" id="carousel1">
-              <div class="carousel-inner" role="listbox">
-                <div class="carousel-item active">
-                  <img class="d-block img-fluid w-100" src="img/promo3.png" data-holder-rendered="true">
+            <!-- instagram -->
+            <div class="col-md-6 " style="background-color: rgb(144, 123, 228);min-height: 110px;">
+              <a href="https://www.instagram.com/milafarmaciademanipulacao/" target="blank">
+                <div class="row h-100 align-items-center">
+                  <div class="col ">
+                    <i class="fa fa-fw fa-instagram fa-3x text-white"></i>
+                  </div>
                 </div>
-                <div class="carousel-item">
-                  <img class="d-block img-fluid w-100" src="img/promo2.png" data-holder-rendered="true">
-                </div>
-                <div class="carousel-item">
-                  <img class="d-block img-fluid w-100" src="img/promo1.png" data-holder-rendered="true">
-                </div>
-              </div>
-              <a class="carousel-control-prev" href="#carousel1" role="button" data-slide="prev"> <span
-                  class="carousel-control-prev-icon" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a>
-              <a class="carousel-control-next" href="#carousel1" role="button" data-slide="next"> <span
-                  class="carousel-control-next-icon" aria-hidden="true"></span> <span class="sr-only">Next</span> </a>
+              </a>
             </div>
           </div>
         </div>
+        <!-- promotions images carrousel -->
+        <!-- <div class="p-3 col-md-6 d-none d-md-block text-center h-100"> -->
+        <div class="p-3 col-md-6 text-center h-100">
+          <div class="carousel slide " data-ride="carousel" id="carousel1">
+            <div class="carousel-inner " role="listbox">
+              <div class="carousel-item   h-100 active">
+                <img class="img-fluid p-2" src="img/promo_01.png" data-holder-rendered="true">
+              </div>
+              <div class="carousel-item h-100 ">
+                <img class="img-fluid p-2" src="img/promo_02.png" data-holder-rendered="true">
+              </div>
+              <div class="carousel-item  h-100 ">
+                <img class="img-fluid p-2" src="img/promo_03.png" data-holder-rendered="true">
+              </div>
+              <div class="carousel-item   h-100">
+                <img class="img-fluid p-2" src="img/promo_04.png" data-holder-rendered="true">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- </div>
+        </div> -->
       </div>
     </div>
   </section>
 
   <!-- manipulate your recipe -->
   <section id="sendInvite">
-    <div class="container-fluid b-color-green p-4" style="min-height:100vh;">
-      <div class="row align-items-center h-100 text-center">
+    <div class="container-flex row b-color-green d-none d-md-block" style="height: 10vh;"> </div>
+    <div class="container-fluid b-color-green pt-5 p-4" style="min-height:100vh;">
+      <div class="row align-items-center h-100">
         <div class="col">
-          <div class="row p-4">
+          <div class="row align-items-center h-100 text-center">
             <div class="col">
-              <h2><strong><em>Manipule sua receita!</em></strong></h2>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col p-4">
-              <h4><strong><em>A farmácia de manipulação Mila está há 15 anos oferencendo medicamentos de qualidade.
-                    <br>Faça um orçamento agora mesmo!
-                    <br>Nos envie sua receita por whatsapp, email ou pela seção de contato do site.
-                </strong></em></h4>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col">
-              <a style="color: white;" title="Envie sua receita por WhatsApp" href="https://wa.me/5548998334506?text=Pedido%20a%20partir%20do%20site%20"
-                target="blank"> <i class="d-block font-color-white fa fa-3x fa-whatsapp"></i></a>
-            </div>
-            <div class="col">
-              <a style="color: white;" title="Envie sua receita por email: farmaciamilla@gmail.com" href="javascript:alert('E-mail: farmaciamilla@gmail.com');"><i
-                  class="d-block font-color-white fa fa-3x fa-envelope"></i></a>
-            </div>
-            <div class="col">
-              <a style="color: white;" title="Envie sua receita por este site" href="#telegram"><i class="d-block font-color-white fa fa-3x fa-laptop"></i></a>
+              <div class="row p-4">
+                <div class="col">
+                  <h2><strong><em>Manipule sua receita!</em></strong></h2>
+                </div>
+              </div>
+              <div class="row wow fadeInUp">
+                <div class="col p-2">
+                  <h4><strong><em style="font-size: 1.3rem;">A farmácia de manipulação Mila está há 15 anos oferencendo medicamentos de qualidade.
+                        <br>Faça um orçamento agora mesmo!
+                        <br>Nos envie sua receita por whatsapp, email ou pela seção de contato do site.
+                    </strong></em></h4>
+                </div>
+              </div>
+              <div class="row  py-3 text-center wow fadeInUp">
+                <div class="col d-none d-md-block"></div>
+                <div class="col">
+                  <a style="color: white; text-decoration: none;" title="Envie sua receita por WhatsApp" href="https://wa.me/5548998334506?text=Pedido%20a%20partir%20do%20site%20"
+                    target="blank"> <i class="d-block font-color-white fa fa-4x fa-whatsapp"></i>WhatsApp</a>
+                </div>
+                <div class="col">
+                  <a style="color: white; text-decoration: none;" title="Envie sua receita por email: farmaciamilla@gmail.com"
+                    href="javascript:alert('Envie sua receita para o e-mail: farmaciamilla@gmail.com');"><i class="d-block fa fa-4x fa-envelope"></i>E-mail</a>
+                </div>
+                <div class="col text-center">
+                  <a class="scrollto" style="color: white; text-decoration: none;" title="Envie sua receita por este site" href="#telegram"><i
+                      class="d-block font-color-white fa fa-4x fa-laptop"></i>Site</a>
+                </div>
+                <div class="col d-none d-md-block"></div>
+              </div>
             </div>
           </div>
         </div>
@@ -282,63 +341,77 @@
   </section>
 
   <!-- Location Section -->
-  <section id="location"">
-      <div class=" container" style="min-height:100vh;">
-    <div class="row p-5">
-      <div class="col text-center">
-        <h2><strong class="text-primary"><em>Localização e contato</em></strong></h2>
-      </div>
+  <section id="location">
+        <div class=" container-flex row" style="height: 15vh;">
     </div>
-    <div class="row">
-      <!-- locaction contact -->
-      <div class="col-md-4 mb-3 mb-md-0 text-primary">
-        <div class="card py-4 h-100 ">
-          <div class="card-body text-center ">
-            <i class="fa fa-fw fa-map-marker fa-3x  mb-2"></i>
-            <h4 class="text-uppercase m-0">Endereço</h4>
-            <hr class="my-4">
-            <div class="small text-primary">Rua Anita Garibaldi, 207, sala 4, Ed. Center Giassi, Içara, SC</div>
-            <div class="small "><a class="text-black-50" href="https://goo.gl/maps/hvmfPTVXJXE2" target="blank">Click
-                aqui para abrir o mapa</a></div>
-          </div>
-        </div>
-      </div>
-      <!-- email contact -->
-      <div class="col-md-4 mb-3 mb-md-0 text-primary">
-        <div class="card py-4 h-100">
-          <div class="card-body text-center">
-            <i class="fa fa-fw fa-envelope fa-3x mb-2"></i>
-            <h4 class="text-uppercase m-0">Email</h4>
-            <hr class="my-4">
-            <div class="small text-primary">
-              farmaciamilla@gmail.com
+    <div class=" container" style="min-height:85vh;">
+      <div class="row align-items-center pt-3 h-100">
+        <div class="col">
+          <div class="row">
+            <div class="col text-center">
+              <h2><strong class="text-primary"><em>Localização e contatos</em></strong></h2>
             </div>
-            <div class="small "><a class="text-black-50" href="#telegram">Click aqui para enviar pelo site</a></div>
+          </div>
+          <div class="row p-4  wow fadeInUp">
+            <!-- locaction contact -->
+            <div class="col-md-4 mb-3 mb-md-0 text-primary">
+              <div class="card py-4 h-100 ">
+                <a style="color: green" href="https://goo.gl/maps/hvmfPTVXJXE2" target="blank">
+                  <div class="card-body text-center ">
+                    <i class="fa fa-fw fa-map-marker fa-3x  mb-2"></i>
+                    <h4 class="text-uppercase m-0">Endereço</h4>
+                    <hr class="my-4">
+                    <div class=" text-primary">Rua Anita Garibaldi, 207, sala 4, Ed. Center Giassi, Içara, SC</div>
+                    <div class="small text-black-50">Click
+                      aqui para abrir o mapa</div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!-- email contact -->
+            <div class="col-md-4 mb-3 mb-md-0 text-primary">
+              <div class="card py-4 h-100">
+                <a class="scrollto" style="color: green" href="#telegram">
+                  <div class="card-body text-center">
+                    <i class="fa fa-fw fa-envelope fa-3x mb-2"></i>
+                    <h4 class="text-uppercase m-0">Email</h4>
+                    <hr class="my-4">
+                    <div class=" text-primary">
+                      farmaciamilla@gmail.com
+                    </div>
+                    <div class="small text-black-50">Click aqui para enviar pelo site</div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!-- phone contact -->
+            <div class="col-md-4 mb-3 mb-md-0 text-primary">
+              <div class="card py-4 h-100">
+                <a style="color: green" href="https://wa.me/5548998334506?text=Pedido%20a%20partir%20do%20site%20"
+                  target="blank">
+                  <div class="card-body text-center">
+                    <i class="fa fa-fw fa-mobile fa-3x mb-2"></i>
+                    <h4 class="text-uppercase m-0">Telefone</h4>
+                    <hr class="my-4">
+                    <div class=" text-primary"><i class="fa fa-phone"></i> (48) 3045 0990</div>
+                    <div class=" text-primary"><i class="fa fa-whatsapp"></i> (48) 9 9833 4506</div>
+                    <div class="small text-black-50">click para enviar um whatsapp</div>
+                  </div>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <!-- phone contact -->
-      <div class="col-md-4 mb-3 mb-md-0 text-primary">
-        <div class="card py-4 h-100">
-          <div class="card-body text-center">
-            <i class="fa fa-fw fa-mobile fa-3x mb-2"></i>
-            <h4 class="text-uppercase m-0">Telefone</h4>
-            <hr class="my-4">
-            <div class="small text-primary"><i class="fa fa-phone"></i> (48) 3045 0990</div>
-            <div class="small text-primary"><i class="fa fa-whatsapp"></i> (48) 9 9833 4506</div>
-            <div class="small "><a class="text-black-50" href="https://wa.me/5548998334506?text=Pedido%20a%20partir%20do%20site%20"
-                target="blank">click para enviar um whatsapp</a></div>
-          </div>
-        </div>
-      </div>
-    </div>
     </div>
   </section>
 
   <!-- Telegram section -->
-  <section id="telegram" style="background-color: green">
-    <div class="container text-center my-auto" style="min-height:100vh;">
-      <div class="row p-2">
+  <section id="telegram">
+    <div class="b-color-green ">
+    <div class="container-flex row b-color-green" style="height: 15vh;"> </div>
+    <div class="container text-center my-auto" style="min-height:85vh;">
+      <div class="row p-2 h-100 align-items-center wow fadeInUp">
         <div class="col-lg mx-auto">
           <h2><strong><em>Orçamentos, dúvidas e dicas da Mila</em></strong></h2>
           <h4><strong><em>Contamos com sua mensagem!</em></strong></h4>
@@ -391,6 +464,7 @@
         </div>
       </div>
     </div>
+  </div>
   </section>
 
   <!-- Footer -->
@@ -398,26 +472,18 @@
     <div class="container-fluid text-center">
       <strong style="color:green">Farmácia Mila! 15 anos com você!</strong>
     </div>
+    <a href="#page-top" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
   </footer>
 
-  <!-- Bootstrap core JavaScript -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
+  <!-- Core JavaScript -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/easing.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
     crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
-    crossorigin="anonymous" style=""></script>
-  <div id="fb-root"></div>
-  <script>
-    (function (d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s);
-      js.id = id;
-      js.src = 'https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v3.2';
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
-  </script>
+    crossorigin="anonymous" ></script>
+  <script src="js/wow.js"></script>
+  <script src="js/main.js"></script>
 
 </body>
 
