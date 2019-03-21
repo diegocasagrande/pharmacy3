@@ -13,7 +13,7 @@
     --red: #dc3545;
     --orange: #fd7e14;
     --yellow: #ffc107;
-    --green: #28a745;
+    --green: #66df82;
     --teal: #20c997;
     --cyan: #17a2b8;
     --white: #fff;
@@ -6237,7 +6237,7 @@ button.close {
     display: inline-block;
     width: 20px;
     height: 20px;
-    background: transparent no-repeat center center;
+    background: rgba(12, 12, 12, 0.12) no-repeat center center;
     background-size: 100% 100%;
 }
 
