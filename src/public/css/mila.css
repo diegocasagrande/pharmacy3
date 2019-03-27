@@ -45,7 +45,7 @@
 .back-to-top {
     position: fixed;
     display: none;
-    background: #3d82224f;
+    background: #3d8222a6;
     color: #fff;
     width: 44px;
     height: 44px;
@@ -53,8 +53,8 @@
     line-height: 1;
     font-size: 16px;
     border-radius: 50%;
-    right: 15px;
-    bottom: 15px;
+    right: 65px;
+    bottom: 25px;
     transition: background 0.5s;
     z-index: 11;
 }
@@ -64,6 +64,24 @@
     color: #fff;
 }
 
-.back-to-top {
-    bottom: 15px;
+.whatsApp-btn {
+    position: fixed;
+    /* display: none; */
+    background: #3d8222a6;
+    color: white;
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    line-height: 1;
+    font-size: 20px;
+    border-radius: 50%;
+    right: 15px;
+    bottom: 25px;
+    transition: background 0.5s;
+    z-index: 11;
+}
+
+.whatsApp-btn i {
+    padding-top: 12px;
+    color: #fff;
 }
