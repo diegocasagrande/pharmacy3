@@ -18,7 +18,7 @@ services:
       - "traefik.frontend.rule=Host:www.farmaciamila.com.br"
 
   reverse-proxy:
-    image: traefik
+    image: traefik:v1.7.25
     command: --api --docker.exposedbydefault=false
     ports:
       - "80:80"
